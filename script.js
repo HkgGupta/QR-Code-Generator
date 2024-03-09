@@ -15,14 +15,9 @@ const qr_image = document.getElementById("qr-image");
 const error = document.getElementById("error");
 
 function showQR() {
-
-    if (textInput.value === "") {
-        return;
-    }
     var encodedData = encodeURIComponent(textInput.value);
     let url = base_api_url + "data=" + encodedData + "&size=200x200";
     qr_image.src = url;
-
 }
 
 function loadQR() {
@@ -32,6 +27,7 @@ function loadQR() {
     if (textInput.value === "") {
         qr_image_container.style.display = "none";
         error.innerHTML = "Input cannot be empty";
+        return;
     } else {
         qr_image_container.style.display = "grid";
         error.innerHTML = "";
@@ -43,11 +39,6 @@ function loadQR() {
     }
 }
 
-
-textInput.addEventListener("keyup", () => {
-    loadQR();
-});
-
-textInput.value = "Hello, World";
+textInput.value = "Hello, World!";
 loadQR();
 

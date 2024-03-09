@@ -15,7 +15,7 @@
     </header>
     <div class="container">
         <div class="wrapper">
-            <input type="text" id="textInput" placeholder="Enter text or url" autocomplete="false">
+            <input type="text" id="textInput" placeholder="Enter text or url" autocomplete="false" onkeyup="loadQR()">
             <p id="error"></p>
             <button id="generateBtn" onclick="loadQR()">Generate QR Code</button>
             <div id="qr-image-container">

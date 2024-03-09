@@ -19,12 +19,13 @@ header {
     align-items: center;
     gap: 1.5rem;
     width: 100%;
+    overflow: visible;
 }
 
 .wrapper,
 .design {
     display: flex;
-    width: 40%;
+    width: 45%;
     flex-direction: column;
     align-items: center;
 }
@@ -35,6 +36,7 @@ header {
 
 .wrapper #textInput {
     width: 100%;
+    min-width: 220px;
     padding: 10px 5px;
     border: 2px solid rgb(35, 87, 184);
     height: max-content;
@@ -48,6 +50,7 @@ header {
 
 .wrapper #generateBtn {
     width: 100%;
+    min-width: 220px;
     padding: 10px 5px;
     margin-top: 5px;
     border: none;
@@ -62,6 +65,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 220px;
     width: 100%;
     border: 2px solid rgb(35, 87, 184);
     margin-top: 10px;
@@ -73,7 +77,7 @@ header {
 
 .wrapper #qr-image {
     width: 100%;
-    height: auto;
+    height: 200px;
     /* object-fit: cover; */
 }
 
