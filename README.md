@@ -15,6 +15,10 @@ This web application allows users to generate QR codes based on input text. It u
 - **CSS**: Used for styling the web page.
 - **JavaScript**: Used for dynamic behavior and interaction.
 
+## Screenshots
+
+![Screenshot of QR Code Generator](Screenshot.png)
+
 ## Credits
 
 - **QR Code Generation API**: Provided by [qrserver.com](https://goqr.me/api/).
